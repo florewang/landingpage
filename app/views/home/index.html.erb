@@ -8,7 +8,8 @@
 <h1>PROGRAMMATION</h1>
 <ul>
     <% @artists.each do |artist| %>
-        <li><%= artist %></li>
+        <li><%= artist[:first_name] +" "+ artist[:last_name] %></li>
+        <li><%= "#{artist[:first_name]} #{artist[:last_name]} is an artist" %></li>
     <% end %>
 </ul>
 
