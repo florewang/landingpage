@@ -7,9 +7,9 @@
 <li>Parce que la musique ca dechire</li>
 <h1>PROGRAMMATION</h1>
 <ul>
-    <% @artists.each do |artist| %>
-        <li><%= artist[:first_name] +" "+ artist[:last_name] %></li>
-        <li><%= "#{artist[:first_name]} #{artist[:last_name]} is an artist" %></li>
+    <% @my_artists.each do |artist| %>
+        <li><%= artist.name %></li>
+        <p><%= artist.description %></p>
     <% end %>
 </ul>
 
