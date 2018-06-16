@@ -1,7 +1,15 @@
-<h1>Fete de la musique</h1>
-<h2>C'est le 21 Juin</h2>
+<h1><%= @name %></h1>
+<h2><%= @time %></h2>
+<h2><%= @place %></h2>
 <p>Venez nombreux nous visiter!</p>
 <p>pourquoi?</p>
 <li>Parce que c'est cool</li>
 <li>Parce que la musique ca dechire</li>
+<h1>PROGRAMMATION</h1>
+<ul>
+    <% @artists.each do |artist| %>
+        <li><%= artist %></li>
+    <% end %>
+</ul>
+
 
